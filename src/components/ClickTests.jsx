@@ -59,7 +59,7 @@ const ClickTests = ({
             <h3>Simple window.open()</h3>
             <button onClick={handlerSimpleOpenTab}>Click me!</button>
           </div>
-          <div className="clickContainer flex-v">
+          <div className="clickContainer">
             <h3>Simple window.open() with setTimeout</h3>
             <button onClick={handlerSimpleOpenTabTimeout}>Click me!</button>
           </div>
@@ -67,7 +67,7 @@ const ClickTests = ({
             <h3>Triggering synchronous action to set state in Redux and then open tab with window.open()</h3>
             <button onClick={handlerClick}>Click me!</button>
           </div>
-          <div className="clickContainer flex-v">
+          <div className="clickContainer">
             <h3>
               Trigger a thunk (async API request) set data into redux and trigger
               another action for window.open()
