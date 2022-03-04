@@ -1,6 +1,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This repository uses the latest version of Yarn. It requires Node >16.10
+## To setup dependencies:
+
+### `yarn`
+
 ## Available Scripts
 
 In the project directory, you can run:
