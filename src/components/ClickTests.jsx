@@ -34,6 +34,10 @@ const ClickTests = ({
     dispatch(getUserData());
   };
 
+  const handlerClickSaga = () => {
+    dispatch({type: "SAGA_OPEN_WINDOW"});
+  };
+
   const handlerSimpleOpenTab = (e) => {
     e.preventDefault();
     window.open("https://www.clik2pay.com");
@@ -73,6 +77,13 @@ const ClickTests = ({
               another action for window.open()
             </h3>
             <button onClick={handlerClickThunk}>Click me!</button>
+          </div>
+          <div className="clickContainer">
+            <h3>
+              Trigger a saga (setTimeout) and trigger
+              another action for window.open()
+            </h3>
+            <button onClick={handlerClickSaga}>Click me!</button>
           </div>
         </div>
       </div>
